@@ -1,0 +1,12 @@
+name: Run commands for bootstrap testing
+on: push
+
+jobs:
+  affichage_et_liste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dire bonjour
+        run: echo "Hello Github Actions!"
+        
+      - name: Lister les fichiers
+        run: ls -la
