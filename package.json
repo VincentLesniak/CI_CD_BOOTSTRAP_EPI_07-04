@@ -1,0 +1,42 @@
+{
+    "name": "webcalculator",
+    "description": "A calculator app in Node.js",
+    "scripts": {
+        "mocha:test": "mocha tests",
+        "nyc:run": "nyc --check-coverage --branches 100 --lines 100 --statements 100 --functions 100 npm run mocha:test",
+        "nyc:coverage": "nyc report --reporter=lcov",
+        "cypress:run": "cypress run",
+        "cypress:test": "start-server-and-test app:serve http://localhost:3000 cypress:run",
+        "eslint:check": "eslint index.js modules/*",
+        "app:serve": "nodemon",
+        "jsdoc": "jsdoc modules/ -d docs"
+    },
+    "dependencies": {
+        "express": "^4.22.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.42.0",
+        "eslint-config-google": "^0.14.0",
+        "jsdoc": "^4.0.2",
+        "jslint": "^0.12.1",
+        "nodemon": "^3.1.14",
+        "nyc": "^15.1.0",
+        "start-server-and-test": "^2.0.0"
+    },
+    "version": "1.0.0",
+    "main": "index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VincentLesniak/CI_CD_BOOTSTRAP_EPI_07-04.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/VincentLesniak/CI_CD_BOOTSTRAP_EPI_07-04/issues"
+    },
+    "homepage": "https://github.com/VincentLesniak/CI_CD_BOOTSTRAP_EPI_07-04#readme"
+}
