@@ -99,3 +99,6 @@ graph TD
 
 <img width="1346" height="967" alt="image" src="https://github.com/user-attachments/assets/1a6e886f-b86e-4644-bb74-4e192743537f" />
 
+
+J'en suis à me documenter pour finir la suite du bootstrap j'ai trouvé ce site https://blog.stephane-robert.info/docs/pipeline-cicd/github/
+
